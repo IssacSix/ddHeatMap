@@ -1,0 +1,25 @@
+{
+  "name": "ddheatmap",
+  "version": "1.0.0",
+  "description": "this is a tool for painting heatMaps",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IssacSix/ddHeatMap.git"
+  },
+  "keywords": [
+    "heatmap"
+  ],
+  "author": "IssacDing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IssacSix/ddHeatMap/issues"
+  },
+  "homepage": "https://github.com/IssacSix/ddHeatMap#readme"
+}
