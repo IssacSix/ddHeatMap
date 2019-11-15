@@ -22,12 +22,14 @@
 
 **heatMap：实例**
 
-| API                  | 参数格式                       | 是否可为空 | 说明                    |
-| -------------------- | ------------------------------ | ---------- | ----------------------- |
-| heatMap.setData()    | object<br>{data: { yourData }} | 是         | 填入数据                |
-| heatMap.addData()    | array<br>[{ x,y,value }]       | 是         | 增加原点数              |
-| heatMap.clearMap()   | /                              | 是         | 清空 map                |
-| heatMap.repaintMap() | /                              | 是         | 重绘，缓存历史所有 data |
+| API                  | 参数格式                        | 是否可为空 | 说明                    |
+| -------------------- | ------------------------------- | ---------- | ----------------------- |
+| heatMap.setData()    | object<br>{data: { yourData }}  | 是         | 填入数据                |
+| heatMap.addData()    | array<br>[{ x,y,value }]        | 是         | 增加圆点数              |
+| heatMap.getData()    | /                               | 是         | 获取所有圆点数 data     |
+| heatMap.getValueAt() | object<br>{x: yourx, y: youry } | 否         | 获取某个坐标上的 vaule  |
+| heatMap.clearMap()   | /                               | 是         | 清空 map                |
+| heatMap.repaintMap() | /                               | 是         | 重绘，缓存历史所有 data |
 
 
 
@@ -42,7 +44,7 @@
 2. 引入
 
    ```
-   const HeatMap = require('ddHeatMap')
+    import HeatMap from 'ddHeatMap'
    ```
 
 3. 在你的文件中，创建画布
@@ -51,9 +53,9 @@
 
    ```js
    const heatmap = HeatMap.create({
-   	container: document.getElementById('xxx'),
-   	max: 100 || max, // 你所需要展示的数字的最大值
-   	min: 10 || min, // 你所需要展示的数字的最小值
+     container: document.getElementById('xxx'),
+     max: 100 || max, // 你所需要展示的数字的最大值
+     min: 10 || min, // 你所需要展示的数字的最小值
      radius: 40, // 圆半径
      gradientConfig, // 渐变色带
      width: 800, // 画布宽
