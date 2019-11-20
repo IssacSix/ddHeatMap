@@ -2,7 +2,7 @@
   "name": "ddheatmap",
   "version": "0.1.0",
   "description": "this is a tool for painting heatMaps",
-  "main": "index.js",
+  "main": "./lib/core.js",
   "directories": {
     "lib": "lib"
   },
